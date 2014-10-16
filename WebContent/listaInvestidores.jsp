@@ -10,17 +10,18 @@
 <body>
 	<form action="listarInvestidores" method="post">
 	
-	<table width="800px" align="center">
-		<tr style="font-weight: bold">
-		<td width="30%">Nome</td>
-		<td width="25%">E-mail</td>
-		<td width="25%">Telefone</td>
-		<td width="25%">Endereco</td>
-		<td>Ação</td>
-		<td>Ação</td>
-		</tr>
-		
-		<c:forEach items="${listaInvestidores}" var="c">
+	<table class="table table-striped"> <!-- width="800px" align="center"> -->
+            <tbody>
+            <thead>
+				<tr>
+					<th>Nome</th>
+					<th>E-mail</th>
+					<th>Telefone</th>
+					<th>Endereco</th>
+					<th>Acao</th>
+					<th>Acao</th>
+				</tr>
+		<c:forEach items="${listarInvestidores}" var="c">
 			<tr>
 			<td>${c.nome}</td>
 			<td>${c.email}</td>
@@ -30,10 +31,12 @@
 			<td><a href="excluirInvestidores?id=${c.id}">Excluir</a></td>
 			</tr>
 		</c:forEach>
-		
 		<tr><td colspan="5">&nbsp</td></tr>
 		<tr><td colspan="5"><a href="menuInvestidores.html">Voltar</a></td></tr>
-		</table>
+		</thead>
+		</tbody>
+	</table>
+		
 		<input type="submit" value="Voltar" name="btnVoltar">&nbsp;
 		<input type="submit" value="Listar" name="btnSalvar">
 	</form>

@@ -112,7 +112,7 @@ Connection conn = null;
 				i.setNome(rs.getString("nome"));
 				i.setEmail(rs.getString("email"));
 				i.setTelefone(rs.getString("telefone"));
-				i.setEndereco(rs.getString("endereco!"));
+				i.setEndereco(rs.getString("endereco"));
 				
 				investidoress.add(i);
 			}
