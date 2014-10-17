@@ -36,7 +36,6 @@ public class ListaServletInvestidores extends HttpServlet {
 		String pagina = "";
 		
 		String voltar = request.getParameter("btnVoltar");
-		
 		String buscar = request.getParameter("buscar");
 		
 		if(voltar != null){
