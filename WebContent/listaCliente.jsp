@@ -8,7 +8,7 @@
 <title>Listar Clientes</title>
 </head>
 <body>
-	<form action="listarClientes" method="post">
+	
 	
 	<table width="800px" align="center">
 		<tr style="font-weight: bold">
@@ -30,10 +30,9 @@
 		</c:forEach>
 		
 		<tr><td colspan="5">&nbsp</td></tr>
-		<tr><td colspan="5"><a href="menuCliente.html">Voltar</a></td></tr>
+		<tr><td colspan="5"><a href="menuCli.jsp">Voltar</a></td></tr>
 		</table>
-		<input type="submit" value="Voltar" name="btnVoltar">&nbsp;
-		<input type="submit" value="Listar" name="btnSalvar">
-	</form>
+		
+	
 </body>
 </html>

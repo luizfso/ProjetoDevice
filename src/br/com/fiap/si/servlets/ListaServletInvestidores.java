@@ -39,7 +39,7 @@ public class ListaServletInvestidores extends HttpServlet {
 		String buscar = request.getParameter("buscar");
 		
 		if(voltar != null){
-			pagina = "MenuInvest.jsp";
+			pagina = "menuInvest.jsp";
 		}
 		else{
 			pagina = "listaInvestidores.jsp";

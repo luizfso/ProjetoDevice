@@ -8,7 +8,6 @@
 <title>Listar Clientes</title>
 </head>
 <body>
-	<form action="listarInvestidores" method="post">
 	
 	<table class="table table-striped"> <!-- width="800px" align="center"> -->
             <tbody>
@@ -32,13 +31,12 @@
 			</tr>
 		</c:forEach>
 		<tr><td colspan="5">&nbsp</td></tr>
-		<tr><td colspan="5"><a href="menuInvestidores.html">Voltar</a></td></tr>
+		<tr><td colspan="5"><a href="menuInvest.jsp">Voltar</a></td></tr>
 		</thead>
 		</tbody>
 	</table>
+	<br>
 		
-		<input type="submit" value="Voltar" name="btnVoltar">&nbsp;
-		<input type="submit" value="Listar" name="btnSalvar">
-	</form>
+		
 </body>
 </html>
