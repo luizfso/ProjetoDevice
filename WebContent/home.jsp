@@ -38,6 +38,9 @@
     <!-- Custom styles for this template -->
     <link href="initializr/css/main.css" rel="stylesheet"></link>
 <style id="holderjs-style" type="text/css"></style>
+<script type="text/javascript">
+$('.dropdown-toggle').dropdown()
+  </script>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -62,15 +65,15 @@
                 <li><a href="About.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais + <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Mais Noticias</a></li>
+                    <li><a href="#">Galeria de Imagens</a></li>
+                    <li><a href="#">Lista de espera</a></li>
                     <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-header">Area Restrita</li>
+                    <li><a href="#">Login do Investidor</a></li>
+                    <li><a href="#">Login do Administrador</a></li>
                   </ul>
                 </li>
               </ul>
@@ -96,9 +99,9 @@
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Inovação no Mundo PET</h1>
+              <p>Isso mesmo, agora seu Pet terá muito mais conforto e higiene com a alimentação certa para ele. Invista nessa ideia e seja receba o kit premium ao ser um dos primeiros em nossa historia.</p>
+              <p><a class="btn btn-lg btn-primary" href="./formInvestidores.jsp" role="button">Investir / Colaborar</a></p>
             </div>
           </div>
         </div>
