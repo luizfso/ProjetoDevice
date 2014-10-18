@@ -1,15 +1,3 @@
-<!--  <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,7 +50,7 @@ $('.dropdown-toggle').dropdown()
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="About.jsp">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais + <span class="caret"></span></a>
@@ -96,7 +84,7 @@ $('.dropdown-toggle').dropdown()
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img src="./initializr/img/petsAlta.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Inovação no Mundo PET</h1>
