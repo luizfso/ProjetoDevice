@@ -42,7 +42,7 @@ public class SalvarServletInvestidores extends HttpServlet {
 		String voltar = request.getParameter("btnVoltar");
 		
 		if(voltar != null){
-			pagina = "menuInvestidores.html";
+			pagina = "menuInvest.jsp";
 		}
 		else{
 			

@@ -41,7 +41,7 @@ public class SalvarServletCliente extends HttpServlet {
 		String voltar = request.getParameter("btnVoltar");
 		
 		if(voltar != null){
-			pagina = "menuCliente.html";
+			pagina = "menuCli.jsp";
 		}
 		else{
 			

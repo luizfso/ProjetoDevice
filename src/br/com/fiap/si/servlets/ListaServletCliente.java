@@ -40,7 +40,7 @@ public class ListaServletCliente extends HttpServlet {
 		String buscar = request.getParameter("buscar");
 		
 		if(voltar != null){
-			pagina = "menuCliente.html";
+			pagina = "menuCli.jsp";
 		}
 		else{
 			pagina = "listaCliente.jsp";

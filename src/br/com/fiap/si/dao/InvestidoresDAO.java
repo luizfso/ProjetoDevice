@@ -49,7 +49,7 @@ Connection conn = null;
 	
 	public void update(Investidores i){
 
-		String sql = "UPDATE tb_investidores SET nome = ?, email = ?, telefone = ?, endereco = ?, WHERE id = ?";
+		String sql = "UPDATE tb_investidores SET nome = ?, email = ?, telefone = ?, endereco = ? WHERE id = ?";
 		
 		try{
 			PreparedStatement stmt = conn.prepareStatement(sql);

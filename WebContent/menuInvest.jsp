@@ -13,7 +13,7 @@
 
 <a href="formInvestidores.jsp">Incluir contato</a><br/>
 <a href="listarInvestidores?id=${investidoress.id}" >Listar todos</a><br/>
-<a href="procurarInvest.jsp">Procurar</a><br/>
+<a href="procurarInvestidores.html">Procurar</a><br/>
 <a href="menu.html">Voltar ao menu</a><br/>
 
 
