@@ -33,17 +33,23 @@ public class LoginServlet extends HttpServlet {
 		
 		String login = request.getParameter("txtLogin");
 		String senha = request.getParameter("txtSenha");
+		String voltar = request.getParameter("btnVoltar");
 		
 		UsuarioDAO dao = new UsuarioDAO();
 		Boolean logado = dao.login(login, senha);
 		
-		if(logado)
-			pagina = "menu.html";
+		if(voltar != null){
+			pagina = "home.jsp";
+		}
 		else
-			pagina = "erro_login.html";
-		
+			if(logado){
+				pagina = "menu.html";}
+			else{
+				pagina = "erro_login.html";
+		}
+	
 		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
 	}
-
 }
+	
