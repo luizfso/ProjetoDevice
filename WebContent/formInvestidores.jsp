@@ -143,17 +143,7 @@ $('.dropdown-toggle').dropdown()
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
-      <!-- START THE FEATURETTES -->
-
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-       
-      </div>
-
-      <!-- /END THE FEATURETTES -->
-
 
       <!-- FOOTER -->
       <footer>

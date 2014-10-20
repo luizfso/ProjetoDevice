@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Project PET Device - About</title>
+    <title>Project PET Device - Sobre o Projeto</title>
 
    	<!-- Bootstrap core CSS -->
     <link href="initializr/css/bootstrap.min.css" rel="stylesheet">
@@ -45,12 +45,16 @@
               </ul>
             </div>
           </div>
-
+			
           <div class="inner cover">
+          <br>
+          <br>
             <h1 class="cover-heading">Sobre nosso Projeto.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">Os animais de estimação podem ficar doente facilmente, por vários motivos e um deles pode ser por exposição a um ambiente desapropriado em sua higiene(sujo, com pouca ventilação), principalmente se esse ambiente envolver onde a sua  comida esteja inadequadamente alocada.</p>
+			<p class="lead">Os donos desses animais devem ter muito cuidado quanto a isso, sempre ficar trocando a agua diariamente, não deixar a comida exposta pois além de poder estragar podem aparecer outros animais ou insetos e contaminar a comida, dar uma alimentação adequada para cada tipo de animal e manter o ambiente sempre limpo e com esses cuidados os animais de estimação podem viver mais e ter uma vida saudável.
+			</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <a href="#" class="btn btn-lg btn-default">Ver fotos do projeto</a>
             </p>
           </div>
 
