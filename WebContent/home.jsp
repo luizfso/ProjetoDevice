@@ -133,19 +133,19 @@ $('.dropdown-toggle').dropdown()
           <img class="img-circle" src="./initializr/img/about140x140-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Sobre o Device Pet</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="About.jsp" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="About.jsp" role="button">Ver mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="./initializr/img/contact140x140-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Entre em Contato</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ver mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="./initializr/img/Mixed_Pets.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Galeria de Imagens</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ver mais &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -160,7 +160,7 @@ $('.dropdown-toggle').dropdown()
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" data-src="./initializr/img/about512x512.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -168,7 +168,7 @@ $('.dropdown-toggle').dropdown()
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" data-src="./initializr/img/tag512x512.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
