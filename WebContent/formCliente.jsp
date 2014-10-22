@@ -128,7 +128,7 @@ $('.dropdown-toggle').dropdown()
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="./initializr/img/Mixed_Pets.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img class="img-circle" src="./initializr/img/contato300x258-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Galeria de Imagens</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
