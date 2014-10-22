@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.fiap.si.bean.Cliente;
+import br.com.fiap.si.bean.Investidores;
 import br.com.fiap.si.dao.ClienteDAO;
+import br.com.fiap.si.dao.InvestidoresDAO;
 
 @SuppressWarnings("unused")
 @WebServlet("/listarClientes")
@@ -33,36 +35,36 @@ public class ListaServletCliente extends HttpServlet {
 
 	protected void requestHandler(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String pagina = "";
+	String pagina = "";
 		
 		String voltar = request.getParameter("btnVoltar");
-		
-		String buscar = request.getParameter("buscar");
-		
+		String buscar = request.getParameter("btnBuscar");
+		 ArrayList<Cliente> clientes = null;
+		ClienteDAO dao = new ClienteDAO();
+		 
+	//	System.out.println(voltar);
+
 		if(voltar != null){
 			pagina = "menuCli.jsp";
-		}
-		else{
+		}else{
 			pagina = "listaCliente.jsp";
-			
-			ClienteDAO dao = new ClienteDAO();
-		
-			ArrayList<Cliente> clientes = null;
-			
-			if(buscar != null){
-				String nome = request.getParameter("txtNome");
+    	}	
+ 
+		clientes = (ArrayList<Cliente>)dao.getByNomeEmail(request.getParameter("txtNome") , request.getParameter("txtEmail"));
 
-				clientes = (ArrayList<Cliente>)dao.getByNome(nome);
-				}
-			else
-				clientes = (ArrayList<Cliente>)dao.getAll();
 		
-			request.setAttribute("listaCliente", clientes);
+		request.setAttribute("listaCliente", clientes);
+	
+	
+	RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);
+	dispatcher.forward(request, response);
 		}
-		
-		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);
-		dispatcher.forward(request, response);
-		
-	}
-
+	
 }
+
+
+
+
+
+
+

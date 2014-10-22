@@ -36,32 +36,27 @@ public class ListaServletInvestidores extends HttpServlet {
 		String pagina = "";
 		
 		String voltar = request.getParameter("btnVoltar");
-		String buscar = request.getParameter("buscar");
-		
+		String buscar = request.getParameter("btnBuscar");
+		 ArrayList<Investidores> investidoress = null;
+		 InvestidoresDAO dao = new InvestidoresDAO();
+		 
+	//	System.out.println(voltar);
+
 		if(voltar != null){
 			pagina = "menuInvest.jsp";
-		}
-		else{
+		}else{
 			pagina = "listaInvestidores.jsp";
-			
-			InvestidoresDAO dao = new InvestidoresDAO();
-		
-			ArrayList<Investidores> investidoress = null;
-			
-			if(buscar != null){
-				String nome = request.getParameter("txtNome");
+    	}	
 
-				investidoress = (ArrayList<Investidores>)dao.getByNome(nome);
-				}
-			else
-				investidoress = (ArrayList<Investidores>)dao.getAll();
+		
+			investidoress = (ArrayList<Investidores>)dao.getByNomeEmail( request.getParameter("txtNome") , request.getParameter("txtEmail"));
+
 		
 			request.setAttribute("listarInvestidores", investidoress);
-		}
+		
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);
 		dispatcher.forward(request, response);
+			}
 		
-	}
-
 }

@@ -15,8 +15,8 @@
 		<td width="30%">Nome</td>
 		<td width="25%">E-mail</td>
 		<td width="25%">Telefone</td>
-		<td>AÁ„o</td>
-		<td>AÁ„o</td>
+		<td>A√Å‚Äûo</td>
+		<td>A√Å‚Äûo</td>
 		</tr>
 		
 		<c:forEach items="${listaCliente}" var="c">
@@ -30,7 +30,7 @@
 		</c:forEach>
 		
 		<tr><td colspan="5">&nbsp</td></tr>
-		<tr><td colspan="5"><a href="menuCli.jsp">Voltar</a></td></tr>
+		<tr><td colspan="5"><a href="procurarClientes.html">Voltar</a></td></tr>
 		</table>
 		
 	

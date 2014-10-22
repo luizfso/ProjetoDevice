@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.fiap.si.bean.Cliente;
+
 import br.com.fiap.si.factory.ConnectionFactory;
 
 public class ClienteDAO {
@@ -160,16 +161,25 @@ public class ClienteDAO {
 		
 	}
 	
-	public List<Cliente> getByNome(String nome){
+	public List<Cliente> getByNomeEmail(String nome ,String email){
 
-		String sql = "SELECT id, nome, email, telefone FROM tb_clientes WHERE nome LIKE ? ORDER BY nome";
+		String sql = "SELECT id, nome, email, telefone FROM tb_clientes WHERE 1=1";
+				
+		if(nome != null && nome.trim() != "")
+		{
+			sql += " and nome LIKE '%"+ nome +"%' ";
+		}
+		if(email != null && email.trim() != "")
+		{
+			sql += " and email LIKE '%"+ email +"%' ";
+		}
+		
+		sql += " ORDER BY nome, email";
 		
 		List<Cliente> clientes = null;
 		
 		try{
 			PreparedStatement stmt = conn.prepareStatement(sql);
-			
-			stmt.setString(1, '%' + nome + '%');
 			
 			ResultSet rs = stmt.executeQuery();
 
@@ -182,7 +192,7 @@ public class ClienteDAO {
 				c.setEmail(rs.getString("email"));
 				c.setTelefone(rs.getString("telefone"));
 				
-				clientes.add(c);
+			clientes.add(c);
 			}
 			
 		}
@@ -196,7 +206,7 @@ public class ClienteDAO {
 		return clientes;
 		
 	}
-	
+	/*
 	public Cliente getByNomes(String nome){
 
 		String sql = "SELECT id, nome, email, telefone, FROM tb_clientes WHERE nome = ?";
@@ -229,7 +239,44 @@ public class ClienteDAO {
 		
 		return c;
 		
-	}	
+	}	*/
+/*
+	public List<Cliente> getByEmail(String email){
 
+		String sql = "SELECT id, nome, email, telefone FROM tb_clientes WHERE email LIKE ? ORDER BY email";
+		
+		List<Cliente> clientes = null;
+		
+		try{
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			
+			stmt.setString(1, '%' + email + '%');
+			
+			ResultSet rs = stmt.executeQuery();
 
+			clientes = new ArrayList<Cliente>();
+			
+			while(rs.next()){
+				Cliente c = new Cliente();
+				c.setId(rs.getInt("id"));
+				c.setNome(rs.getString("nome"));
+				c.setEmail(rs.getString("email"));
+				c.setTelefone(rs.getString("telefone"));
+				
+				clientes.add(c);
+			}
+			
+		}
+		catch(SQLException ex){ 
+			ex.printStackTrace();
+		}
+		finally{
+			
+		}
+		
+		return clientes;
+		
+	}*/
+	
+	
 }

@@ -50,8 +50,8 @@ $('.dropdown-toggle').dropdown()
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="./about.jsp">About</a></li>
-                <li><a href="./contato.jsp">Contact</a></li>
+                <li><a href="./about.jsp">Sobre</a></li>
+                <li><a href="./contato.jsp">Contato</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais + <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -72,6 +72,8 @@ $('.dropdown-toggle').dropdown()
 
       </div>
     </div>
+    
+    
 
 
     <!-- Carousel
@@ -156,8 +158,8 @@ $('.dropdown-toggle').dropdown()
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Fique por dentro de nosso Projeto. <span class="text-muted">A combinacao da tecnologia com o seu Pet.</span></h2>
+          <p class="lead">Estamos mudando, inovando para a saude de seu pet. Cada vez mais esse mundo pet recebe atenção e reconhecimento. Nós entendemos isso e queremos ir sempre além. Conheça mais de nosso projeto</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="./initializr/img/about512x512.png" alt="Generic placeholder image">
@@ -168,11 +170,11 @@ $('.dropdown-toggle').dropdown()
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="./initializr/img/tag512x512.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" data-src="/initializr/img/tag512x512.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Como a Tag funciona?. <span class="text-muted">É simples e fácil de usar.</span></h2>
+          <p class="lead">Assim como uma coleira normal, a tag se mostra como um objeto de adorno para os pets. Com um design simples, ela tem uma poderosa tecnologia em seu interior. Veja nossos modelos.</p>
         </div>
       </div>
 
@@ -180,11 +182,11 @@ $('.dropdown-toggle').dropdown()
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Quer conhecer nossa equipe de perto? <span class="text-muted">Entre em contato.</span></h2>
+          <p class="lead">Ficamos a disposição para tirar dúvidas e receber os diversos contatos para o melhor atendimento. Aceitamos sugestões e queremos te conhecer melhor. O sucesso de nosso projeto só depende do melhor entendimento de nosso cliente, e queremos sempre saber mais sbre voce e seu pet.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
         </div>
       </div>
 
@@ -195,8 +197,8 @@ $('.dropdown-toggle').dropdown()
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a href="#">Voltar para o topo</a></p>
+        <p>&copy; 2014 SalvePet, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->

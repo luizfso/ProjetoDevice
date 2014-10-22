@@ -9,17 +9,15 @@
 </head>
 <body>
 	
-	<table class="table table-striped"> <!-- width="800px" align="center"> -->
-            <tbody>
-            <thead>
-				<tr>
-					<th>Nome</th>
-					<th>E-mail</th>
-					<th>Telefone</th>
-					<th>Endereco</th>
-					<th>Acao</th>
-					<th>Acao</th>
-				</tr>
+	<table width="800px" align="center">
+		<tr style="font-weight: bold">
+		<td width="30%">Nome</td>
+		<td width="25%">E-mail</td>
+		<td width="25%">Telefone</td>
+		<td width="25%">EndereÁo</td>
+		<td>AÁ„o</td>
+		<td>AÁ„o</td>
+		</tr>
 		<c:forEach items="${listarInvestidores}" var="c">
 			<tr>
 			<td>${c.nome}</td>
@@ -31,7 +29,7 @@
 			</tr>
 		</c:forEach>
 		<tr><td colspan="5">&nbsp</td></tr>
-		<tr><td colspan="5"><a href="menuInvest.jsp">Voltar</a></td></tr>
+		<tr><td colspan="5"><a href="procurarInvestidores.html">Voltar</a></td></tr>
 		</thead>
 		</tbody>
 	</table>

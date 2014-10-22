@@ -127,7 +127,7 @@ Connection conn = null;
 		
 		return investidoress;
 		
-	}
+	} 
 	
 	public Investidores getByPK(Integer id){
 
@@ -163,7 +163,7 @@ Connection conn = null;
 		return i;
 		
 	}
-	
+	/*
 	public List<Investidores> getByNome(String nome){
 
 		String sql = "SELECT id, nome, email, telefone, endereco FROM tb_investidores WHERE nome LIKE ? ORDER BY nome";
@@ -200,8 +200,54 @@ Connection conn = null;
 		
 		return investidoress;
 		
+	}*/
+	public List<Investidores> getByNomeEmail(String nome ,String email){
+
+		String sql = "SELECT id, nome, email, telefone, endereco FROM tb_investidores WHERE 1=1";
+				
+		if(nome != null && nome.trim() != "")
+		{
+			sql += " and nome LIKE '%"+ nome +"%' ";
+		}
+		if(email != null && email.trim() != "")
+		{
+			sql += " and email LIKE '%"+ email +"%' ";
+		}
+		
+		sql += " ORDER BY nome, email";
+		
+		List<Investidores> investidoress = null;
+		
+		try{
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			
+			ResultSet rs = stmt.executeQuery();
+
+			investidoress = new ArrayList<Investidores>();
+			
+			while(rs.next()){
+				Investidores i = new Investidores();
+				i.setId(rs.getInt("id"));
+				i.setNome(rs.getString("nome"));
+				i.setEmail(rs.getString("email"));
+				i.setTelefone(rs.getString("telefone"));
+				i.setTelefone(rs.getString("endereco"));
+				
+				investidoress.add(i);
+			}
+			
+		}
+		catch(SQLException ex){ 
+			ex.printStackTrace();
+		}
+		finally{
+			
+		}
+		
+		return investidoress;
+		
 	}
-	
+	/*
 	public Investidores getByNomes(String nome){
 
 		String sql = "SELECT id, nome, email, telefone, endereco FROM tb_investidores WHERE nome = ?";
@@ -235,8 +281,47 @@ Connection conn = null;
 		
 		return i;
 		
-	}	
+	}*/
 
+/*
+	public List<Investidores> getByEmail(String email){
+
+		String sql = "SELECT id, nome, email, telefone, endereco FROM tb_investidores WHERE email LIKE ? ORDER BY email";
+		
+		List<Investidores> investidoress = null;
+		
+		try{
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			
+			stmt.setString(1, '%' + email + '%');
+			
+			ResultSet rs = stmt.executeQuery();
+
+			investidoress = new ArrayList<Investidores>();
+			
+			while(rs.next()){
+				Investidores i = new Investidores();
+				i.setId(rs.getInt("id"));
+				i.setNome(rs.getString("nome"));
+				i.setEmail(rs.getString("email"));
+				i.setTelefone(rs.getString("telefone"));
+				i.setTelefone(rs.getString("endereco"));
+				
+				investidoress.add(i);
+			}
+			
+		}
+		catch(SQLException ex){ 
+			ex.printStackTrace();
+		}
+		finally{
+			
+		}
+		
+		return investidoress;
+		
+	}*/
+	
 
 }
 
