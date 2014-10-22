@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.fiap.si.bean.Investidores;
-import br.com.fiap.si.dao.InvestidoresDAO;
+import br.com.fiap.si.bean.Cliente;
+import br.com.fiap.si.dao.ClienteDAO;
 
-@WebServlet("/salvarInvestidores")
-public class SalvarServletInvestidores extends HttpServlet {
+@WebServlet("/salvarClienteADM")
+public class SalvarServletClienteADM extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public SalvarServletInvestidores() {
+    public SalvarServletClienteADM() {
         super();
     }
 
@@ -37,34 +37,32 @@ public class SalvarServletInvestidores extends HttpServlet {
 		String nome = request.getParameter("txtNome");
 		String email = request.getParameter("txtEmail");
 		String telefone = request.getParameter("txtTelefone");
-		String endereco = request.getParameter("txtEndereco");
 		
 		String voltar = request.getParameter("btnVoltar");
 		
 		if(voltar != null){
-			pagina = "menuInvest.jsp";
+			pagina = "menuCli.jsp";
 		}
 		else{
 			
-			Investidores i = new Investidores();
-			i.setNome(nome);
-			i.setEmail(email);
-			i.setTelefone(telefone);
-			i.setEndereco(endereco);
+			Cliente c = new Cliente();
+			c.setNome(nome);
+			c.setEmail(email);
+			c.setTelefone(telefone);
 			
-			InvestidoresDAO dao = new InvestidoresDAO();
+			ClienteDAO dao = new ClienteDAO();
 			
 			if(id.equals(""))
-				dao.insert(i);
+				dao.insert(c);
 			else{
-				i.setId(Integer.parseInt(id));
-				dao.update(i);
+				c.setId(Integer.parseInt(id));
+				dao.update(c);
 			}
 			
-			ArrayList<Investidores> investidoress = (ArrayList<Investidores>) dao.getAll();
-			request.setAttribute("listarInvestidores", investidoress);
+			ArrayList<Cliente> clientes = (ArrayList<Cliente>) dao.getAll();
+			request.setAttribute("listaCliente", clientes);
 			
-			pagina = "home.jsp";
+			pagina = "listaCliente.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);

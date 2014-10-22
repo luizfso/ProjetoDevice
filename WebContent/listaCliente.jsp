@@ -58,7 +58,6 @@
                    <li><a href="./listaEspera.jsp">Lista de espera</a></li>
                   <li class="divider"></li>
                    <li class="dropdown-header">Area Restrita</li>
-                   <li><a href="./loginInvest.jsp">Login do Investidor</a></li>
                    <li><a href="./login.html">Login do Administrador</a></li>
                 </ul>
               </li>

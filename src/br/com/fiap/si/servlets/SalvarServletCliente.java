@@ -62,7 +62,7 @@ public class SalvarServletCliente extends HttpServlet {
 			ArrayList<Cliente> clientes = (ArrayList<Cliente>) dao.getAll();
 			request.setAttribute("listaCliente", clientes);
 			
-			pagina = "listaCliente.jsp";
+			pagina = "home.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);

@@ -60,7 +60,6 @@ $('.dropdown-toggle').dropdown()
                     <li><a href="./listaEspera.jsp">Lista de espera</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Area Restrita</li>
-                    <li><a href="./loginInvest.jsp">Login do Investidor</a></li>
                     <li><a href="./login.html">Login do Administrador</a></li>
                   </ul>
                   </ul>
@@ -87,7 +86,7 @@ $('.dropdown-toggle').dropdown()
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="./initializr/img/welcome03.jpg" alt="First slide">
+          <img class="imgCarousel" src="./initializr/img/welcome03.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Inovação no Mundo PET</h1>
@@ -97,7 +96,7 @@ $('.dropdown-toggle').dropdown()
           </div>
         </div>
         <div class="item">
-          <img src="./initializr/img/welcome02.jpg" alt="Second slide">
+          <img class="imgCarousel" src="./initializr/img/welcome02.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Faça parte desse projeto também.</h1>
@@ -107,12 +106,12 @@ $('.dropdown-toggle').dropdown()
           </div>
         </div>
         <div class="item">
-          <img src="./initializr/img/welcome04.jpg" alt="Third slide">
+          <img class="imgCarousel" src="./initializr/img/welcome04.png" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="./galeria.html" role="button">Browse gallery</a></p>
+              <h1>Pré-Venda para Cliente.</h1>
+              <p>Faça agora mesmo um pedido de pré venda e obtenha o produto primeiro que todos. Se torne nosso primeiro cliente.</p>
+              <p><a class="btn btn-lg btn-primary" href="./formCliente.jsp" role="button">Pré-Venda / Cliente</a></p>
             </div>
           </div>
         </div>
@@ -144,7 +143,7 @@ $('.dropdown-toggle').dropdown()
           <p><a class="btn btn-default" href="#" role="button">Ver mais <span class="glyphicon glyphicon-eye-open"></span></a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="./initializr/img/Mixed_Pets.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img class="img-circle" src="./initializr/img/contato300x258-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Galeria de Imagens</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">Ver mais <span class="glyphicon glyphicon-eye-open"></span></a></p>

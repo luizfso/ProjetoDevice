@@ -39,7 +39,7 @@ public class AlterarServletCliente extends HttpServlet {
 		
 		Cliente c = dao.getByPK(id);
 		
-		pagina = "formCliente.jsp";
+		pagina = "formClienteADM.jsp";
 		
 		request.setAttribute("cliente", c);
 		

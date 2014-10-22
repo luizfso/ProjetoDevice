@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.fiap.si.bean.Investidores;
 import br.com.fiap.si.dao.InvestidoresDAO;
 
-@WebServlet("/salvarInvestidores")
-public class SalvarServletInvestidores extends HttpServlet {
+@WebServlet("/salvarInvestidoresADM")
+public class SalvarServletInvestidoresADM extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public SalvarServletInvestidores() {
+    public SalvarServletInvestidoresADM() {
         super();
     }
 
@@ -64,7 +64,7 @@ public class SalvarServletInvestidores extends HttpServlet {
 			ArrayList<Investidores> investidoress = (ArrayList<Investidores>) dao.getAll();
 			request.setAttribute("listarInvestidores", investidoress);
 			
-			pagina = "home.jsp";
+			pagina = "listaInvestidores.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(pagina);

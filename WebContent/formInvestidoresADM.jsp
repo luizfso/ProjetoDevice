@@ -81,7 +81,7 @@ $('.dropdown-toggle').dropdown()
 <div class="container marketing">
 	<div class="jumbotron">
 
-		<form class="form-horizontal" role="form" action="salvarInvestidores?id=${investidores.id}" method="post">
+		<form class="form-horizontal" role="form" action="salvarInvestidoresADM?id=${investidores.id}" method="post">
 		<h2 class="form-cadastro-heading">Dados Cadastrais Para Investidores</h2>
 		
 		<div class="form-group">

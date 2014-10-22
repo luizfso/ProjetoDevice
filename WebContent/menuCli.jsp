@@ -57,8 +57,7 @@
                    <li><a href="./galeria.html">Galeria de Imagens</a></li>
                    <li><a href="./listaEspera.jsp">Lista de espera</a></li>
                   <li class="divider"></li>
-                   <li class="dropdown-header">Area Restrita</li>
-                   <li><a href="./loginInvest.jsp">Login do Investidor</a></li>
+                   <li class="dropdown-header">Area Restrita</li>                   
                    <li><a href="./login.html">Login do Administrador</a></li>
                 </ul>
               </li>
@@ -75,7 +74,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
 		<h1>Menu Clientes</h1>
-			<p><a class="btn btn-primary" role="button" href="formCliente.jsp"><span class="glyphicon glyphicon-arrow-right"></span> Incluir contato Cliente</a> </p>
+			
 			<p><a class="btn btn-primary" role="button" href="listarClientes?id=${clientes.id}"><span class="glyphicon glyphicon-arrow-right"></span> Listar todos</a> </p>
 			<p><a class="btn btn-primary" role="button" href="procurarClientes.html"><span class="glyphicon glyphicon-arrow-right"></span> Procurar</a> </p>
 			<p><a class="btn btn-primary" role="button" href="menu.html"><span class="glyphicon glyphicon-arrow-left"></span> Voltar ao menu</a> </p>
