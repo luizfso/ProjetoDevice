@@ -55,9 +55,7 @@ $('.dropdown-toggle').dropdown()
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Mais <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="./noticias.jsp">Mais Noticias</a></li>
                     <li><a href="./galeria.html">Galeria de Imagens</a></li>
-                    <li><a href="./listaEspera.jsp">Lista de espera</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Area Restrita</li>
                     <li><a href="./login.html">Login do Administrador</a></li>

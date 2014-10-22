@@ -57,9 +57,7 @@ $('.dropdown-toggle').dropdown()
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais + <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Mais Noticias</a></li>
                     <li><a href="#">Galeria de Imagens</a></li>
-                    <li><a href="#">Lista de espera</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">Area Restrita</li>
                     <li><a href="./login.html">Login do Administrador</a></li>
