@@ -75,7 +75,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
 		<h1>Menu Investidores</h1>
-			<p><a class="btn btn-primary" role="button" href="formInvestidores.jsp"><span class="glyphicon glyphicon-arrow-right"></span> Incluir contato Investidor</a> </p>
+			<p><a class="btn btn-primary" role="button" href="formInvestidoresADM.jsp"><span class="glyphicon glyphicon-arrow-right"></span> Incluir contato Investidor</a> </p>
 			<p><a class="btn btn-primary" role="button" href="listarInvestidores?id=${investidoress.id}"><span class="glyphicon glyphicon-arrow-right"></span> Listar todos</a> </p>
 			<p><a class="btn btn-primary" role="button" href="procurarInvestidores.html"><span class="glyphicon glyphicon-arrow-right"></span> Procurar</a> </p>
 			<p><a class="btn btn-primary" role="button" href="menu.html"><span class="glyphicon glyphicon-arrow-left"></span> Voltar ao menu</a> </p>

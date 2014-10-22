@@ -53,7 +53,7 @@ $('.dropdown-toggle').dropdown()
                 <li><a href="./about.jsp">Sobre</a></li>
                 <li><a href="./contato.jsp">Contato</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais + <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Mais <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="./noticias.jsp">Mais Noticias</a></li>
                     <li><a href="./galeria.html">Galeria de Imagens</a></li>
@@ -87,7 +87,7 @@ $('.dropdown-toggle').dropdown()
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="./initializr/img/petsAlta.jpg" alt="First slide">
+          <img src="./initializr/img/welcome03.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Inovação no Mundo PET</h1>
@@ -97,22 +97,22 @@ $('.dropdown-toggle').dropdown()
           </div>
         </div>
         <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img src="./initializr/img/welcome02.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Faça parte desse projeto também.</h1>
               <p>Nao conhece o Projeto ainda? Voce pode e ajudar essa comunidade que cresce a cada dia. Queremos dar mais qualidade para nossos pet's e sabemos que voce também pensa assim. Sainba mais desse projeto !</p>
-              <p><a class="btn btn-lg btn-primary" href="./About.jsp" role="button">Quero saber mais</a></p>
+              <p><a class="btn btn-lg btn-primary" href="./about.jsp" role="button">Quero saber mais</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img src="./initializr/img/welcome04.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="./galeria.html" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -135,19 +135,19 @@ $('.dropdown-toggle').dropdown()
           <img class="img-circle" src="./initializr/img/about140x140-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Sobre o Device Pet</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="About.jsp" role="button">Ver mais &raquo;</a></p>
+          <p><a class="btn btn-default" href="About.jsp" role="button">Ver mais <span class="glyphicon glyphicon-eye-open"></span></a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="./initializr/img/contact140x140-01.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Entre em Contato</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">Ver mais &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ver mais <span class="glyphicon glyphicon-eye-open"></span></a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="./initializr/img/Mixed_Pets.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Galeria de Imagens</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">Ver mais &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ver mais <span class="glyphicon glyphicon-eye-open"></span></a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -162,7 +162,7 @@ $('.dropdown-toggle').dropdown()
           <p class="lead">Estamos mudando, inovando para a saude de seu pet. Cada vez mais esse mundo pet recebe atenção e reconhecimento. Nós entendemos isso e queremos ir sempre além. Conheça mais de nosso projeto</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="./initializr/img/about512x512.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="./initializr/img/about512x512.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -170,7 +170,7 @@ $('.dropdown-toggle').dropdown()
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="/initializr/img/tag512x512.jpg" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="./initializr/img/tag512x512.jpg" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading">Como a Tag funciona?. <span class="text-muted">É simples e fácil de usar.</span></h2>
@@ -186,7 +186,7 @@ $('.dropdown-toggle').dropdown()
           <p class="lead">Ficamos a disposição para tirar dúvidas e receber os diversos contatos para o melhor atendimento. Aceitamos sugestões e queremos te conhecer melhor. O sucesso de nosso projeto só depende do melhor entendimento de nosso cliente, e queremos sempre saber mais sbre voce e seu pet.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjI1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjMxcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L3N2Zz4=">
+          <img class="featurette-image img-responsive" alt="500x500" data-src="holder.js/500x500/auto" src="./initializr/img/contato512x512-01.jpeg">
         </div>
       </div>
 
