@@ -81,7 +81,7 @@ $('.dropdown-toggle').dropdown()
 <div class="container marketing">
 	<div class="jumbotron">
 
-		<form class="form-horizontal" role="form" action="salvarInvestidoresADM?id=${investidores.id}" method="post">
+		<form class="form-horizontal" role="form" action="salvarInvestidores?id=${investidores.id}" method="post">
 		<h2 class="form-cadastro-heading">Dados Cadastrais Para Investidores</h2>
 		
 		<div class="form-group">
@@ -113,7 +113,7 @@ $('.dropdown-toggle').dropdown()
   		
        <div class="form-group">
     		
-		<button class="btn btn-primary" type="submit" value="Voltar" name="btnVoltar"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</button>&nbsp;
+		<a class="btn btn-primary" href="./home.jsp" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</a>&nbsp;
 		<button class="btn btn-success" type="submit" value="Salvar" name="btnSalvar"><span class="glyphicon glyphicon-floppy-save"></span> Salvar</button>
   		</div>
     	

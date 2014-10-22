@@ -107,8 +107,8 @@ $('.dropdown-toggle').dropdown()
   		
        <div class="form-group">
     		
-		<button class="btn btn-primary" type="submit" value="Voltar" name="btnVoltar">Voltar</button>&nbsp;
-		<button class="btn btn-success" type="submit" value="Salvar" name="btnSalvar">Salvar</button>
+		<a class="btn btn-primary" href="./home.jsp" role="button"><span class="glyphicon glyphicon-arrow-left"></span> Voltar</a>&nbsp;&nbsp;
+		<button class="btn btn-success" type="submit" value="Salvar" name="btnSalvar"><span class="glyphicon glyphicon-floppy-save"></span> Salvar</button>
   		</div>
     	
     	

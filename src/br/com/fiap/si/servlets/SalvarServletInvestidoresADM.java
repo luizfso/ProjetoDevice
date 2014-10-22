@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.fiap.si.bean.Investidores;
 import br.com.fiap.si.dao.InvestidoresDAO;
 
-@WebServlet("/salvarInvestidoresADM")
+@WebServlet("/salvarInvestADM")
 public class SalvarServletInvestidoresADM extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
