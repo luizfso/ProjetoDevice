@@ -53,7 +53,7 @@ $('.dropdown-toggle').dropdown()
                 <li><a href="./about.jsp">Sobre</a></li>
                 <li><a href="./contato.jsp">Contato</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Mais <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Mais</a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="./galeria.html">Galeria de Imagens</a></li>
                     <li class="divider"></li>
